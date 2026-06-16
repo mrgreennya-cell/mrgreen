@@ -48,7 +48,43 @@ access.log
 public/css/user.css
 public/error/
 /plugins/
-/data
+# === 用户数据：只保留配置，排除敏感和个人数据 ===
+/data/*
+!/data/default-user
+/data/default-user/*
+!/data/default-user/OpenAI Settings
+!/data/default-user/themes
+!/data/default-user/settings.json
+!/data/default-user/extensions
+!/data/default-user/content.log
+!/data/default-user/context
+!/data/default-user/instruct
+!/data/default-user/sysprompt
+!/data/default-user/reasoning
+!/data/default-user/KoboldAI Settings
+!/data/default-user/NovelAI Settings
+!/data/default-user/TextGen Settings
+!/data/default-user/QuickReplies
+!/data/default-user/user
+!/data/default-user/worlds
+# 排除敏感数据
+/data/default-user/secrets.json
+/data/default-user/settings.backup-*.json
+/data/default-user/**/*.backup-*.json
+/data/default-user/**/.git
+/data/default-user/chats/
+/data/default-user/backups/
+/data/default-user/thumbnails/
+/data/default-user/vectors/
+/data/default-user/movingUI/
+/data/default-user/assets/
+/data/default-user/backgrounds/
+/data/default-user/characters/
+/data/default-user/group chats/
+/data/default-user/groups/
+/data/default-user/User Avatars/
+/data/default-user/stats.json
+/data/default-user/image-metadata.json
 /default/scaffold
 public/scripts/extensions/third-party
 /certs
