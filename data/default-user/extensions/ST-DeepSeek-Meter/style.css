@@ -1,0 +1,78 @@
+/* 思考块彻底隐藏：思维链只留在上下文里，绝不进入正文观感 */
+.mes_reasoning_details,
+.mes_reasoning {
+    display: none !important;
+}
+
+/* DeepSeek 用量与峰谷面板 */
+#dsm-panel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 4px 8px 6px 8px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: rgba(20, 32, 46, 0.72);
+    border: 1px solid rgba(80, 144, 211, 0.25);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b9c6d6;
+    cursor: pointer;
+    user-select: none;
+}
+
+#dsm-panel:hover {
+    background: rgba(28, 44, 62, 0.85);
+}
+
+#dsm-panel .dsm-tag {
+    display: inline-block;
+    padding: 0 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+#dsm-panel .dsm-tag.peak {
+    background: rgba(224, 85, 85, 0.22);
+    color: #ff9a9a;
+}
+
+#dsm-panel .dsm-tag.off {
+    background: rgba(76, 175, 132, 0.22);
+    color: #7fd9b0;
+}
+
+#dsm-panel .dsm-timer {
+    color: #8899b4;
+}
+
+#dsm-panel .dsm-bal {
+    font-weight: 600;
+    color: #7fd9b0;
+}
+
+#dsm-panel .dsm-cost {
+    color: #6aa5e8;
+    font-weight: 700;
+}
+
+#dsm-panel .dsm-sep {
+    color: rgba(136, 153, 180, 0.45);
+}
+
+#dsm-panel .dsm-detail {
+    display: none;
+    width: 100%;
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px dashed rgba(80, 144, 211, 0.25);
+    font-size: 11px;
+    color: #8899b4;
+    white-space: pre-wrap;
+}
+
+#dsm-panel.dsm-open .dsm-detail {
+    display: block;
+}

@@ -94,3 +94,18 @@ public/scripts/extensions/third-party
 yarn.lock
 *.code-workspace
 test-results/
+
+# ==== 本地隐私与临时文件（不推送）====
+data/default-user/secrets.json
+data/default-user/chats/
+data/default-user/backups/
+data/default-user/user/files/
+data/default-user/settings.json.bak-*
+data/default-user/settings.backup-*.json
+data/default-user/settings.json.before-restore
+*.bak
+*.bak2
+*.bak-*
+_trash_*/
+data/_cache/
+data/_webpack/
